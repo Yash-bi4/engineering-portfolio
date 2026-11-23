@@ -24,6 +24,10 @@
       {
         "label": "Tools",
         "text": "SolidWorks, Ansys Fluent and Mechanical, CNC machining, STM32, Python"
+      },
+      {
+        "label": "Seeking",
+        "text": "Summer 2027 internship in product design and engineering, propulsion, manufacturing, space, or automotive. Open to any location."
       }
     ],
     "strip": [
@@ -39,7 +43,7 @@
     "bio": [
       "I am a junior in Mechanical Engineering with a minor in Robotics at Carnegie Mellon University. I expect to graduate in May 2028. I transferred from Penn State, where I studied Aerospace Engineering.",
       "I work on embedded hardware, aero structures, manufacturing, and AI-driven CAD. Most of my projects mix mechanical design with electronics and firmware.",
-      "TODO: one sentence on the internship you want (term, role type, location)."
+      "I am looking for a Summer 2027 internship in product design and engineering, propulsion, manufacturing, space, or automotive. I am open to any location."
     ]
   },
   "timeline": [
