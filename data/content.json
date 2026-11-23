@@ -1,0 +1,725 @@
+{
+  "site": {
+    "name": "Yash Kuiya",
+    "email": "ykuiya@andrew.cmu.edu",
+    "linkedin": "https://www.linkedin.com/in/yash-kumar-kuiya-43a65a1b1/",
+    "github": "TODO: GitHub URL",
+    "resume": "resume.pdf"
+  },
+  "about": {
+    "photo": "images/profile.jpg",
+    "photoAlt": "Photo of Yash Kuiya",
+    "bio": [
+      "I am a junior in Mechanical Engineering with a minor in Robotics at Carnegie Mellon University. I expect to graduate in May 2028. I transferred from Penn State, where I studied Aerospace Engineering.",
+      "I work on embedded hardware, aero structures, manufacturing, and AI-driven CAD. Most of my projects mix mechanical design with electronics and firmware.",
+      "TODO: one sentence on the internship you want (term, role type, location)."
+    ]
+  },
+  "timeline": [
+    {
+      "id": "vdel",
+      "type": "work",
+      "org": "Visual Design Engineering Lab (VDEL), Carnegie Mellon University",
+      "role": "Undergraduate Researcher, Generative Manufacturing Design (Prof. Levent Burak Kara)",
+      "dates": "Sept 2025 – Present",
+      "location": "Pittsburgh, PA",
+      "bullets": [
+        "Building an LLM pipeline that converts natural language and reference images into parametric CAD through SysML part models. Industry-sponsored; pending journal publication.",
+        "Part sizes are grounded in published literature and current supply-chain data. Compiler repair and vision scoring automatically fix invalid designs.",
+        "Validating DFM rules on the KERF project by scoring AI-generated CAD against machined walls, holes, and corners."
+      ]
+    },
+    {
+      "id": "rocket-command",
+      "type": "work",
+      "org": "Carnegie Mellon Rocket Command",
+      "role": "Mechanics Subteam",
+      "dates": "Aug 2025 – Present",
+      "location": "Pittsburgh, PA",
+      "bullets": [
+        "Designed and machined the body tube for the rocket airframe. FEA showed a safety factor of 2 under 20 g launch loads.",
+        "Earned NAR/TRA Level 1 high-power rocketry certification. Built and flew an L1 rocket to 1,100 ft apogee; recovered intact.",
+        "Working on an L2 rocket with a custom STM32 flight computer and machined avionics bay (in progress)."
+      ]
+    },
+    {
+      "id": "cmr",
+      "type": "work",
+      "org": "Carnegie Mellon Racing (FSAE)",
+      "role": "Aerodynamics & Powertrain Subteam",
+      "dates": "Aug 2025 – Present",
+      "location": "Pittsburgh, PA",
+      "bullets": [
+        "Designed vortex generators in SolidWorks and simulated them in Ansys Fluent: about 10 N downforce change at 50 mph for a 10% drag penalty. Concluded they were not worth adding."
+      ]
+    },
+    {
+      "id": "cmu",
+      "type": "education",
+      "org": "Carnegie Mellon University",
+      "role": "B.S. Mechanical Engineering, Minor in Robotics",
+      "dates": "Expected May 2028",
+      "location": "Pittsburgh, PA",
+      "bullets": [
+        "Relevant coursework: Circuits, Statics, Strength of Materials, Thermodynamics, Fluid Mechanics.",
+        "In progress: Mechanical Design, Heat Transfer, Dynamics."
+      ]
+    },
+    {
+      "id": "safran",
+      "type": "work",
+      "org": "Safran",
+      "role": "Engineering & Quality Intern",
+      "dates": "May 2025 – Aug 2025",
+      "location": "Everett, WA",
+      "bullets": [
+        "Simulated cabin ventilation flow in Ansys Fluent across 5 operating conditions to characterize duct pressure drop. Delivered the findings to the team in a formal report.",
+        "Ran First Article Inspection on 3 parts against engineering drawings and cleared them for production release.",
+        "Modeled as-built vs. nominal geometry in SolidWorks to document supplier and in-house non-conformances.",
+        "Wrote and revised test plans and interior component drawings for class dividers and bulkheads."
+      ]
+    },
+    {
+      "id": "psu-research",
+      "type": "work",
+      "org": "Penn State University",
+      "role": "Undergraduate Research Assistant",
+      "dates": "Oct 2024 – Mar 2025",
+      "location": "University Park, PA",
+      "bullets": [
+        "Screened 2 functional metal-oxide compositions for phase stability using Thermo-Calc CALPHAD databases.",
+        "Implemented a revised structure-search algorithm in MATLAB and C++. It cut convergence time by 20% compared to the group's prior method."
+      ]
+    },
+    {
+      "id": "penn-state",
+      "type": "education",
+      "org": "Pennsylvania State University",
+      "role": "B.S. Aerospace Engineering, Minor in Mathematics",
+      "dates": "Aug 2024 – May 2025",
+      "location": "University Park, PA",
+      "bullets": [
+        "GPA 3.90/4.00. Dean's List.",
+        "Transferred to Carnegie Mellon."
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "org": "American Society of Mechanical Engineers (ASME)",
+      "role": "Member",
+      "dates": "Sept 2024 – Present"
+    },
+    {
+      "org": "Penn State Student Government",
+      "role": "Sustainability Senator",
+      "dates": "Sept 2024 – May 2025"
+    }
+  ],
+  "skills": [
+    {
+      "group": "CAD / Analysis",
+      "items": [
+        "SolidWorks",
+        "AutoCAD",
+        "Ansys Fluent (CFD)",
+        "Ansys Mechanical (FEA)",
+        "Thermo-Calc (CALPHAD)",
+        "OpenRocket"
+      ]
+    },
+    {
+      "group": "Manufacturing",
+      "items": [
+        "Manual lathe",
+        "Manual milling",
+        "CNC milling",
+        "Waterjet",
+        "3D printing"
+      ]
+    },
+    {
+      "group": "Test / Quality",
+      "items": [
+        "LabVIEW",
+        "First Article Inspection",
+        "Non-conformance reporting"
+      ]
+    },
+    {
+      "group": "Embedded / Electronics",
+      "items": [
+        "KiCad PCB design",
+        "STM32",
+        "ESP32",
+        "Arduino"
+      ]
+    },
+    {
+      "group": "Software",
+      "items": [
+        "Python (PyTorch)",
+        "C",
+        "C++",
+        "MATLAB",
+        "Docker",
+        "Linux"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "pendulum-robot",
+      "featured": true,
+      "title": "Self-Balancing Pendulum Robot",
+      "summary": "Self-balancing robot with a custom KiCad motor driver and STM32 closed-loop control.",
+      "tags": [
+        "Embedded",
+        "Mechanical Design",
+        "Controls"
+      ],
+      "cover": "images/projects/pendulum-robot/cover.svg",
+      "coverAlt": "Placeholder: photo of the pendulum robot",
+      "role": "Mechanical design, electronics, and firmware",
+      "timeframe": "Summer 2026 – present",
+      "team": "Solo (personal project)",
+      "status": "",
+      "goal": "Design and build a self-balancing pendulum robot end to end, including the chassis, the motor-driver electronics, and the control firmware.",
+      "did": [
+        "Designed the chassis in SolidWorks.",
+        "Built it from 3D-printed and machined parts.",
+        "Designed a custom two-layer motor-driver PCB in KiCad.",
+        "Wrote closed-loop motor control in C on an STM32.",
+        "Tuned the PID controller."
+      ],
+      "results": [
+        "20 ms settling time with under 10% overshoot after PID tuning.",
+        "Positioning repeatable to ±10 mm over 30 trials."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/pendulum-robot/cover.svg",
+          "alt": "Placeholder: photo of the pendulum robot"
+        },
+        {
+          "src": "images/projects/pendulum-robot/1.svg",
+          "alt": "Placeholder: motor-driver PCB"
+        },
+        {
+          "src": "images/projects/pendulum-robot/2.svg",
+          "alt": "Placeholder: step response plot"
+        }
+      ],
+      "links": [
+        {
+          "label": "Repo",
+          "url": "TODO: link"
+        }
+      ]
+    },
+    {
+      "id": "l2-avionics-bay",
+      "featured": true,
+      "title": "L2 High-Power Rocket: Custom Avionics Bay",
+      "summary": "Custom STM32 flight computer in a machined avionics bay for an L2 rocket.",
+      "tags": [
+        "Embedded",
+        "Manufacturing",
+        "Rocketry"
+      ],
+      "cover": "images/projects/l2-avionics-bay/cover.svg",
+      "coverAlt": "Placeholder: photo of the avionics bay",
+      "role": "TODO: role",
+      "timeframe": "TODO: dates",
+      "team": "Club (Carnegie Mellon Rocket Command)",
+      "status": "In progress",
+      "goal": "Build the avionics bay for an L2 high-power rocket: a custom STM32 flight computer mounted in a machined bay, with drawings and design reviews done to a production standard.",
+      "did": [
+        "Designing a custom STM32 flight computer.",
+        "Machining the avionics bay.",
+        "Writing GD&T drawings, DFMEA, and DFM notes (in progress)."
+      ],
+      "results": [
+        "In progress. TODO: results after test or flight."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/l2-avionics-bay/cover.svg",
+          "alt": "Placeholder: photo of the avionics bay"
+        },
+        {
+          "src": "images/projects/l2-avionics-bay/1.svg",
+          "alt": "Placeholder: CAD model of the avionics bay"
+        },
+        {
+          "src": "images/projects/l2-avionics-bay/2.svg",
+          "alt": "Placeholder: flight computer PCB"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "nl-to-cad",
+      "featured": true,
+      "title": "Natural-Language-to-CAD Pipeline",
+      "summary": "LLM pipeline that turns natural-language requests and reference images into parametric CAD.",
+      "tags": [
+        "AI/CAD",
+        "Research",
+        "Software"
+      ],
+      "cover": "images/projects/nl-to-cad/cover.svg",
+      "coverAlt": "Placeholder: pipeline diagram",
+      "role": "Undergraduate Researcher",
+      "timeframe": "Sept 2025 – present",
+      "team": "Team (VDEL, CMU, Prof. Levent Burak Kara)",
+      "status": "",
+      "goal": "Turn a natural-language request and a reference image into a parametric CAD part, in a way where each failure can be traced back to either the design intent or the generated code.",
+      "did": [
+        "Requests map to SysML part stereotypes, then to a JSON design representation, then to KCL code. Each step can be checked on its own.",
+        "Compiler errors feed an automated repair loop.",
+        "A vision check renders the part and scores it against the reference image.",
+        "Part sizes are grounded in published literature and current supply-chain data.",
+        "Validating DFM rules on the KERF project by scoring AI-generated CAD against machined walls, holes, and corners."
+      ],
+      "results": [
+        "Industry-sponsored. Pending journal publication (no link yet).",
+        "TODO: quantitative results once they can be shared."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/nl-to-cad/cover.svg",
+          "alt": "Placeholder: pipeline diagram"
+        },
+        {
+          "src": "images/projects/nl-to-cad/1.svg",
+          "alt": "Placeholder: generated part next to reference image"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "bike-shifter",
+      "featured": true,
+      "title": "Automatic Bicycle Shifter",
+      "summary": "Motor-driven auto-shift box that bolts to the water bottle cage mount.",
+      "tags": [
+        "Mechanical Design",
+        "Mechatronics"
+      ],
+      "cover": "images/projects/bike-shifter/cover.svg",
+      "coverAlt": "Placeholder: photo of the auto-shift box",
+      "role": "TODO: role",
+      "timeframe": "TODO: semester",
+      "team": "Team (CMU 24-370)",
+      "status": "In progress",
+      "goal": "Add automatic shifting to a standard bicycle without modifying the frame.",
+      "did": [
+        "Designed a motor-driven auto-shift box that bolts to the standard water bottle cage mount.",
+        "Earlier concept: an in-line servo shifter between the derailleur and the stock shifter, which kept the mechanical shifter as a failsafe.",
+        "CAD and FEA of the design."
+      ],
+      "results": [
+        "In progress. TODO: results."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/bike-shifter/cover.svg",
+          "alt": "Placeholder: photo of the auto-shift box"
+        },
+        {
+          "src": "images/projects/bike-shifter/1.svg",
+          "alt": "Placeholder: CAD of the bottle cage mount"
+        },
+        {
+          "src": "images/projects/bike-shifter/2.svg",
+          "alt": "Placeholder: FEA of the mount bracket"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "tripod-leveler",
+      "featured": false,
+      "title": "Self-Leveling Tripod Attachment",
+      "summary": "Camera mount that levels itself with an IMU and 3 servos. Invention disclosure filed.",
+      "tags": [
+        "Mechatronics",
+        "Mechanical Design",
+        "Embedded"
+      ],
+      "cover": "images/projects/tripod-leveler/cover.jpg",
+      "coverAlt": "Built tripod attachment next to its SolidWorks model",
+      "role": "Design, fabrication, assembly, programming",
+      "timeframe": "TODO: dates",
+      "team": "TODO: Solo or Team (course? the portfolio says Design III)",
+      "status": "",
+      "goal": "Build a tripod attachment that levels the camera automatically, with simple controls for users with wrist pain.",
+      "did": [
+        "Ran a user survey to pick the 3 most important features.",
+        "Modeled each part in SolidWorks, planned the assembly, and ran motion studies.",
+        "3D-printed the control box and plastic linkages; CNC-machined the metal linkages.",
+        "Programmed an Arduino to read an IMU and drive 3 servos."
+      ],
+      "results": [
+        "Levels the platform within 0.5 s.",
+        "Leveling error under 3 degrees.",
+        "Filed an invention disclosure for the design."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/tripod-leveler/photo.jpg",
+          "alt": "Finished attachment mounted on a tripod"
+        },
+        {
+          "src": "images/projects/tripod-leveler/cad.jpg",
+          "alt": "SolidWorks model of the attachment"
+        },
+        {
+          "src": "images/projects/tripod-leveler/fea.jpg",
+          "alt": "SolidWorks simulation of the attachment"
+        },
+        {
+          "src": "images/projects/tripod-leveler/wiring.jpg",
+          "alt": "Wiring diagram: 2S LiPo, buck converter, Arduino, IMU over I2C, and 3 servos"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "l2-tripoli",
+      "featured": false,
+      "title": "L2 Certification Rocket (Tripoli)",
+      "summary": "Fiberglass high-power rocket with a dual-deploy avionics bay, flown to 3,000 ft for TRA Level 2.",
+      "tags": [
+        "Rocketry",
+        "Manufacturing",
+        "Structures"
+      ],
+      "cover": "images/projects/l2-tripoli/cover.jpg",
+      "coverAlt": "Rocket on the launch rail next to labeled CAD of the avionics bay",
+      "role": "Design, fabrication, flight",
+      "timeframe": "TODO: date",
+      "team": "TODO: Solo or Team",
+      "status": "",
+      "goal": "Design, build, and fly a fiberglass high-power rocket for Tripoli Rocketry Association (TRA) Level 2 certification, with an avionics bay that deploys the parachutes.",
+      "did": [
+        "Designed the rocket and the avionics bay in SolidWorks.",
+        "Cut the fiberglass tubes with a wet tile saw; cut the fiberglass fins and bulkheads on a waterjet.",
+        "Ran flight simulations in OpenRocket to check the design.",
+        "Applied epoxy to the fins and bulkheads for strength.",
+        "Built the avionics bay: a 3D-printed sled between fiberglass bulkheads, holding two flight computers, a 9V battery, a LiPo battery, and a screw-switch mount."
+      ],
+      "results": [
+        "Reached 3,000 ft.",
+        "Both parachutes deployed.",
+        "Earned TRA Level 2 certification."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/l2-tripoli/on-pad.jpg",
+          "alt": "Rocket on the launch rail"
+        },
+        {
+          "src": "images/projects/l2-tripoli/launch.jpg",
+          "alt": "Rocket lifting off"
+        },
+        {
+          "src": "images/projects/l2-tripoli/cad-rocket.jpg",
+          "alt": "SolidWorks section view of the full rocket"
+        },
+        {
+          "src": "images/projects/l2-tripoli/avionics-bay.jpg",
+          "alt": "Labeled CAD of the avionics bay, front and back"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "l1-body-tube",
+      "featured": false,
+      "title": "L1 Rocket: FEA-Validated Body Tube",
+      "summary": "Designed, analyzed, and machined a body tube, then flew it for Level 1 certification.",
+      "tags": [
+        "Structures",
+        "FEA",
+        "Rocketry"
+      ],
+      "cover": "images/projects/l1-body-tube/cover.svg",
+      "coverAlt": "Placeholder: photo of the L1 rocket",
+      "role": "Mechanics Subteam: design, analysis, machining",
+      "timeframe": "TODO: date",
+      "team": "Club (Carnegie Mellon Rocket Command)",
+      "status": "",
+      "goal": "Design and build a rocket airframe body tube that survives launch loads, and fly it for Level 1 high-power certification.",
+      "did": [
+        "Designed the airframe body tube.",
+        "Validated it with FEA under 20 g launch loads.",
+        "Machined the body tube myself.",
+        "Built and flew the L1 rocket."
+      ],
+      "results": [
+        "Safety factor of 2 under 20 g launch loads (FEA).",
+        "1,100 ft apogee.",
+        "Earned NAR/TRA Level 1 certification.",
+        "Recovered intact."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/l1-body-tube/cover.svg",
+          "alt": "Placeholder: photo of the L1 rocket"
+        },
+        {
+          "src": "images/projects/l1-body-tube/1.svg",
+          "alt": "Placeholder: FEA of the body tube"
+        },
+        {
+          "src": "images/projects/l1-body-tube/2.svg",
+          "alt": "Placeholder: rocket after recovery"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "fsae-vortex-generators",
+      "featured": false,
+      "title": "FSAE Vortex Generator CFD Study",
+      "summary": "CFD study showing vortex generators were not worth their drag penalty.",
+      "tags": [
+        "CFD",
+        "Aerodynamics"
+      ],
+      "cover": "images/projects/fsae-vortex-generators/cover.svg",
+      "coverAlt": "Placeholder: CFD result of vortex generators",
+      "role": "Aerodynamics Subteam",
+      "timeframe": "TODO: dates",
+      "team": "Team (Carnegie Mellon Racing)",
+      "status": "",
+      "goal": "Find out whether adding vortex generators to the car would be worth it.",
+      "did": [
+        "Designed the vortex generators in SolidWorks.",
+        "Simulated them in Ansys Fluent.",
+        "Compared the downforce change against the added drag.",
+        "Recommended against using them."
+      ],
+      "results": [
+        "About 10 N downforce change at 50 mph for a 10% drag penalty."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/fsae-vortex-generators/cover.svg",
+          "alt": "Placeholder: CFD result of vortex generators"
+        },
+        {
+          "src": "images/projects/fsae-vortex-generators/1.svg",
+          "alt": "Placeholder: downforce vs. drag plot"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "fsae-monocoque",
+      "featured": false,
+      "title": "FSAE Monocoque",
+      "summary": "Carbon-fiber composite manufacturing and machining for the FSAE car.",
+      "tags": [
+        "Composites",
+        "Manufacturing"
+      ],
+      "cover": "images/projects/fsae-monocoque/cover.svg",
+      "coverAlt": "Placeholder: photo of the monocoque layup",
+      "role": "TODO: role",
+      "timeframe": "TODO: dates",
+      "team": "Team (Carnegie Mellon Racing)",
+      "status": "",
+      "goal": "TODO: what the monocoque work set out to do.",
+      "did": [
+        "Carbon-fiber composite manufacturing.",
+        "Machining.",
+        "TODO: details."
+      ],
+      "results": [
+        "TODO: results."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/fsae-monocoque/cover.svg",
+          "alt": "Placeholder: photo of the monocoque layup"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "homelab",
+      "featured": false,
+      "title": "Self-Hosted Homelab",
+      "summary": "Ubuntu server running my own photo and file storage, with 3-2-1 backups.",
+      "tags": [
+        "Linux",
+        "Self-Hosting"
+      ],
+      "cover": "images/projects/homelab/cover.svg",
+      "coverAlt": "Placeholder: photo of the homelab server",
+      "role": "Setup and maintenance",
+      "timeframe": "TODO: dates",
+      "team": "Solo",
+      "status": "",
+      "goal": "Move my photos and files off cloud services onto hardware I own, with backups I trust.",
+      "did": [
+        "Set up a Dell Optiplex 790 on Ubuntu Server 24.04, booting from NVMe through a GRUB-on-HDD workaround.",
+        "Run Nextcloud and Immich in Docker, with remote access through Tailscale.",
+        "Set up 3-2-1 backups.",
+        "Run AdGuard Home on a Raspberry Pi Zero 2W for network-wide ad-blocking."
+      ],
+      "results": [
+        "Migrated my photo libraries off Google Photos and iCloud."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/homelab/cover.svg",
+          "alt": "Placeholder: photo of the homelab server"
+        },
+        {
+          "src": "images/projects/homelab/1.svg",
+          "alt": "Placeholder: network and backup diagram"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "esp32-captive-portal",
+      "featured": false,
+      "title": "ESP32 WiFi Captive Portal",
+      "summary": "TODO: one-line description.",
+      "tags": [
+        "Embedded"
+      ],
+      "cover": "images/projects/esp32-captive-portal/cover.svg",
+      "coverAlt": "Placeholder: photo of the ESP32 board",
+      "role": "TODO: role",
+      "timeframe": "TODO: dates",
+      "team": "Solo",
+      "status": "",
+      "goal": "TODO: what the project set out to do.",
+      "did": [
+        "TODO: 3 to 5 bullets."
+      ],
+      "results": [
+        "TODO: results."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/esp32-captive-portal/cover.svg",
+          "alt": "Placeholder: photo of the ESP32 board"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "small-tools",
+      "featured": false,
+      "title": "Small Tools",
+      "summary": "A Python screenshot-to-PDF app and an offline viewer for ChatGPT exports.",
+      "tags": [
+        "Software"
+      ],
+      "cover": "images/projects/small-tools/cover.svg",
+      "coverAlt": "Placeholder: screenshot of the screenshot-to-PDF app",
+      "role": "Author",
+      "timeframe": "TODO: dates",
+      "team": "Solo",
+      "status": "",
+      "goal": "Two small utilities I wrote for my own use.",
+      "did": [
+        "Wrote a Python app that turns screenshots into a PDF.",
+        "Wrote an offline HTML viewer for ChatGPT data exports."
+      ],
+      "results": [
+        "TODO: results, if any."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/small-tools/cover.svg",
+          "alt": "Placeholder: screenshot of the screenshot-to-PDF app"
+        },
+        {
+          "src": "images/projects/small-tools/1.svg",
+          "alt": "Placeholder: screenshot of the ChatGPT export viewer"
+        }
+      ],
+      "links": [
+        {
+          "label": "Repo",
+          "url": "TODO: link"
+        }
+      ]
+    },
+    {
+      "id": "project-todo-1",
+      "featured": false,
+      "title": "Project Title TODO",
+      "summary": "TODO: one-line description.",
+      "tags": [
+        "TODO"
+      ],
+      "cover": "images/projects/project-todo-1/cover.svg",
+      "coverAlt": "Placeholder image",
+      "role": "TODO: role",
+      "timeframe": "TODO: dates",
+      "team": "TODO: Solo or Team",
+      "status": "",
+      "goal": "TODO: one short paragraph on what the project set out to do.",
+      "did": [
+        "TODO: bullet 1",
+        "TODO: bullet 2",
+        "TODO: bullet 3"
+      ],
+      "results": [
+        "TODO: results, with numbers if you have them."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/project-todo-1/cover.svg",
+          "alt": "Placeholder image"
+        }
+      ],
+      "links": [
+        {
+          "label": "Repo",
+          "url": "TODO: link"
+        }
+      ]
+    },
+    {
+      "id": "project-todo-2",
+      "featured": false,
+      "title": "Project Title TODO",
+      "summary": "TODO: one-line description.",
+      "tags": [
+        "TODO"
+      ],
+      "cover": "images/projects/project-todo-2/cover.svg",
+      "coverAlt": "Placeholder image",
+      "role": "TODO: role",
+      "timeframe": "TODO: dates",
+      "team": "TODO: Solo or Team",
+      "status": "",
+      "goal": "TODO: one short paragraph on what the project set out to do.",
+      "did": [
+        "TODO: bullet 1",
+        "TODO: bullet 2",
+        "TODO: bullet 3"
+      ],
+      "results": [
+        "TODO: results, with numbers if you have them."
+      ],
+      "gallery": [
+        {
+          "src": "images/projects/project-todo-2/cover.svg",
+          "alt": "Placeholder image"
+        }
+      ],
+      "links": []
+    }
+  ]
+}
