@@ -220,8 +220,25 @@
       if (lightbox._from) lightbox._from.focus();
     });
 
-    // Deep link on load: index.html#pendulum-robot
+    // Deep link on load: projects.html#pendulum-robot
     syncToHash();
+  }
+
+  /* ---------- Home page ---------- */
+
+  function initHome(data) {
+    var h = data.home || {};
+    $("#home-name").textContent = data.site.name;
+    $("#home-headline").innerHTML = txt(h.headline || "");
+    $("#home-intro").innerHTML = txt(h.intro || "");
+    var featured = (data.projects || []).filter(function (p) { return p.featured; });
+    if (!featured.length) $("#selected-h").parentNode.hidden = true;
+    $("#selected").innerHTML = featured.map(function (p) {
+      return (
+        '<li><a href="projects.html#' + encodeURIComponent(p.id) + '">' + txt(p.title) + "</a>" +
+        "<p>" + txt(p.summary) + (p.status ? ' <span class="card-status">(' + txt(p.status) + ")</span>" : "") + "</p></li>"
+      );
+    }).join("");
   }
 
   /* ---------- About page ---------- */
@@ -323,6 +340,7 @@
     })
     .then(function (data) {
       renderFooter(data.site || {});
+      if (page === "home") initHome(data);
       if (page === "projects") initProjects(data);
       if (page === "about") initAbout(data);
     })

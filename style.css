@@ -179,6 +179,24 @@ main { padding-bottom: 3rem; }
 }
 .notice code { font-family: var(--mono); }
 
+/* ---------- Home ---------- */
+
+.home > * { max-width: 760px; }
+.home-name { font-size: 2.4rem; line-height: 1.15; margin: 4.5rem 0 0.75rem; }
+.home-headline { font-size: 1.1rem; margin: 0 0 0.75rem; }
+.home-intro { color: var(--muted); margin: 0 0 1.75rem; max-width: 60ch; }
+.home-links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.5rem; }
+
+.selected { list-style: none; padding: 0; margin: 0; counter-reset: sel; }
+.selected li { counter-increment: sel; padding: 0.75rem 0 0.75rem 2.5rem; border-bottom: 1px solid var(--rule); position: relative; }
+.selected li::before {
+  content: counter(sel, decimal-leading-zero);
+  position: absolute; left: 0; top: 0.85rem;
+  font-family: var(--mono); font-size: 0.8rem; color: var(--muted);
+}
+.selected a { font-weight: 600; }
+.selected p { margin: 0.15rem 0 0; color: var(--muted); font-size: 0.93rem; }
+
 /* ---------- Project cards ---------- */
 
 .card-grid {
@@ -535,6 +553,7 @@ dialog { color: var(--text); }
   .nav { gap: 0.5rem 1rem; }
   .nav-tabs { gap: 1rem; }
   .page-title { font-size: 1.6rem; margin-top: 1.75rem; }
+  .home-name { font-size: 1.9rem; margin-top: 2.5rem; }
   .modal { width: 100%; max-width: 100%; max-height: 100%; height: 100%; border-radius: 0; margin: 0; }
   .modal-inner { padding: 1.25rem 1.1rem 2rem; }
   .bio { grid-template-columns: 1fr; gap: 1rem; }

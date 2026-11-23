@@ -1,14 +1,18 @@
 {
   "site": {
-    "name": "Yash Kuiya",
+    "name": "Yash Kumar Kuiya",
     "email": "ykuiya@andrew.cmu.edu",
     "linkedin": "https://www.linkedin.com/in/yash-kumar-kuiya-43a65a1b1/",
     "github": "TODO: GitHub URL",
     "resume": "resume.pdf"
   },
+  "home": {
+    "headline": "B.S. Mechanical Engineering, minor in Robotics, Carnegie Mellon University. Graduating May 2028.",
+    "intro": "I design and build hardware: embedded electronics, aero structures, and machined parts. I also do research on AI-driven CAD."
+  },
   "about": {
     "photo": "images/profile.jpg",
-    "photoAlt": "Photo of Yash Kuiya",
+    "photoAlt": "Photo of Yash Kumar Kuiya",
     "bio": [
       "I am a junior in Mechanical Engineering with a minor in Robotics at Carnegie Mellon University. I expect to graduate in May 2028. I transferred from Penn State, where I studied Aerospace Engineering.",
       "I work on embedded hardware, aero structures, manufacturing, and AI-driven CAD. Most of my projects mix mechanical design with electronics and firmware.",

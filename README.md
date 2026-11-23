@@ -3,7 +3,8 @@
 Plain HTML, CSS and JavaScript. No build step, no npm, no frameworks.
 
 ```
-index.html          Projects tab (landing page, card grid + project modal)
+index.html          Landing page (name, short intro, featured projects)
+projects.html       Projects tab (card grid + project modal)
 about.html          About tab (bio, timeline, skills, contact)
 resume.html         Resume tab (embedded PDF + download button)
 style.css           All styling
@@ -34,7 +35,7 @@ Then open http://localhost:8000. Stop it with Ctrl+C. On GitHub Pages none of th
 
 ## Add a project
 
-1. Pick a short id with lowercase letters and dashes, e.g. `wind-tunnel-rig`. It becomes the link: `https://<username>.github.io/#wind-tunnel-rig`.
+1. Pick a short id with lowercase letters and dashes, e.g. `wind-tunnel-rig`. It becomes the link: `https://<your-site>/projects.html#wind-tunnel-rig`.
 2. Make a folder `images/projects/wind-tunnel-rig/` and put your images in it, e.g. `cover.jpg`, `1.jpg`, `2.jpg`. Use a 3:2 shape (e.g. 1500 x 1000 px) for the cover so it crops cleanly. Keep each image under about 500 KB.
 3. Open `data/content.json`, find the `"projects"` list, and copy one of the `"Project Title TODO"` blocks (everything from `{` to the matching `},`). Paste it where you want the card to appear. Order in the file is order on the page.
 4. Fill in the fields:
@@ -67,7 +68,7 @@ Then open http://localhost:8000. Stop it with Ctrl+C. On GitHub Pages none of th
 ```
 
 Notes:
-- `"featured": true` puts the card in the Featured section at the top.
+- `"featured": true` puts the card in the Featured section at the top of Projects and in "Selected work" on the landing page.
 - `"status"`: leave as `""` for finished projects, or write `"In progress"` / `"Proposal stage"`. It shows on the card and in the detail view.
 - Cards show the first 3 tags only.
 - Empty fields are hidden. An empty `"links": []` hides the Links section.
@@ -78,6 +79,7 @@ To delete a project, delete its block (and its image folder).
 ## Edit the timeline, skills, bio
 
 All in `data/content.json`:
+- `"home"`: the headline and intro on the landing page.
 - `"about"`: bio paragraphs and photo path.
 - `"timeline"`: one block per job or school. `"type"` is `"work"` or `"education"` (this drives the filter). Entries show in the order listed, so keep newest first.
 - `"skills"`: groups with a list of items each.
