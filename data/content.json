@@ -62,7 +62,7 @@
       "type": "education",
       "org": "Carnegie Mellon University",
       "role": "B.S. Mechanical Engineering, Minor in Robotics",
-      "dates": "Expected May 2028",
+      "dates": "Aug 2025 – May 2028 (expected)",
       "location": "Pittsburgh, PA",
       "bullets": [
         "Relevant coursework: Circuits, Statics, Strength of Materials, Thermodynamics, Fluid Mechanics.",
@@ -86,7 +86,7 @@
     {
       "id": "psu-research",
       "type": "work",
-      "org": "Penn State University",
+      "org": "Applied Research Laboratory, Penn State University",
       "role": "Undergraduate Research Assistant",
       "dates": "Oct 2024 – Mar 2025",
       "location": "University Park, PA",
@@ -104,6 +104,7 @@
       "location": "University Park, PA",
       "bullets": [
         "GPA 3.90/4.00. Dean's List.",
+        "Activities: Student Government, Aerospace Club, Cybersecurity Club.",
         "Transferred to Carnegie Mellon."
       ]
     }
@@ -118,6 +119,18 @@
       "org": "Penn State Student Government",
       "role": "Sustainability Senator",
       "dates": "Sept 2024 – May 2025"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Autodesk Certified User: AutoCAD",
+      "issuer": "Autodesk",
+      "date": "Jul 2024"
+    },
+    {
+      "name": "Level 1 High-Power Rocketry Certification",
+      "issuer": "NAR/TRA",
+      "date": "TODO: date"
     }
   ],
   "skills": [

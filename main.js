@@ -304,6 +304,16 @@
       }).join("");
     }
 
+    // Certifications
+    var certs = data.certifications || [];
+    var certBox = $("#certifications");
+    if (certBox) {
+      if (!certs.length) certBox.parentNode.hidden = true;
+      certBox.innerHTML = certs.map(function (c) {
+        return '<li><span class="act-dates">' + txt(c.date) + "</span> <strong>" + txt(c.name) + "</strong>, " + txt(c.issuer) + "</li>";
+      }).join("");
+    }
+
     // Contact
     var s = data.site;
     function shortUrl(u) { return u.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""); }
