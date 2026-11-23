@@ -95,9 +95,17 @@ All in `data/content.json`:
 
 ## Deploy to GitHub Pages
 
-One-time setup:
+**Current setup:** this site lives in the public repo `Yash-bi4/engineering-portfolio` and is served at https://yash-bi4.github.io/engineering-portfolio/ from the root of `main`. To edit it on a new computer:
 
-1. Sign in to GitHub. Create a new **public** repository named exactly `<your-username>.github.io` (for example `ykuiya.github.io`). Do not add a README or license, since this folder already has a README.
+```powershell
+gh repo clone Yash-bi4/engineering-portfolio
+```
+
+Then edit, and use the "Every later update" commands below.
+
+**Setting it up from scratch** (only if you ever start over):
+
+1. Sign in to GitHub. Create a new **public** repository. A repo named `<your-username>.github.io` is served at `https://<your-username>.github.io`; any other name (e.g. `engineering-portfolio`) is served at `https://<your-username>.github.io/<repo-name>/`. Do not add a README or license, since this folder already has a README.
 2. Install Git if needed: https://git-scm.com/downloads
 3. In this folder, run:
 
@@ -114,7 +122,7 @@ git commit -m "First version of portfolio"
 ```
 
 ```powershell
-git remote add origin https://github.com/<your-username>/<your-username>.github.io.git
+git remote add origin https://github.com/<your-username>/<repo-name>.git
 ```
 
 ```powershell
@@ -122,7 +130,7 @@ git push -u origin main
 ```
 
 4. On GitHub, open the repo, go to **Settings > Pages**. Under **Build and deployment**, set **Source** to "Deploy from a branch", **Branch** to `main`, folder `/ (root)`, and click **Save**.
-5. Wait one or two minutes, then open `https://<your-username>.github.io`.
+5. Wait one or two minutes, then open the address from step 1.
 
 Every later update:
 
