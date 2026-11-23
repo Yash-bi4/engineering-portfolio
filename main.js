@@ -230,13 +230,27 @@
     var h = data.home || {};
     $("#home-name").textContent = data.site.name;
     $("#home-headline").innerHTML = txt(h.headline || "");
-    $("#home-intro").innerHTML = txt(h.intro || "");
-    var featured = (data.projects || []).filter(function (p) { return p.featured; });
-    if (!featured.length) $("#selected-h").parentNode.hidden = true;
-    $("#selected").innerHTML = featured.map(function (p) {
+
+    var a = data.about || {};
+    var photo = $("#home-photo");
+    if (a.photo) { photo.src = a.photo; photo.alt = a.photoAlt || ""; }
+    else photo.hidden = true;
+
+    $("#home-facts").innerHTML = (h.highlights || []).map(function (f) {
+      return "<div><dt>" + txt(f.label) + "</dt><dd>" + txt(f.text) + "</dd></div>";
+    }).join("");
+
+    // Image strip: projects listed in home.strip, or the featured ones if not set.
+    var byId = {};
+    (data.projects || []).forEach(function (p) { byId[p.id] = p; });
+    var picks = (h.strip || []).map(function (id) { return byId[id]; }).filter(Boolean);
+    if (!picks.length) picks = (data.projects || []).filter(function (p) { return p.featured; }).slice(0, 4);
+    if (!picks.length) $("#selected-h").parentNode.hidden = true;
+    $("#strip").innerHTML = picks.map(function (p) {
       return (
-        '<li><a href="projects.html#' + encodeURIComponent(p.id) + '">' + txt(p.title) + "</a>" +
-        "<p>" + txt(p.summary) + (p.status ? ' <span class="card-status">(' + txt(p.status) + ")</span>" : "") + "</p></li>"
+        '<li><a href="projects.html#' + encodeURIComponent(p.id) + '">' +
+        '<img src="' + esc(p.cover) + '" alt="' + esc(p.coverAlt || p.title) + '" width="1200" height="800">' +
+        "<span>" + txt(p.title) + "</span></a></li>"
       );
     }).join("");
   }

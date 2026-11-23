@@ -3,7 +3,7 @@
 Plain HTML, CSS and JavaScript. No build step, no npm, no frameworks.
 
 ```
-index.html          Landing page (name, short intro, featured projects)
+index.html          Landing page (photo, name, key facts, project image strip)
 projects.html       Projects tab (card grid + project modal)
 about.html          About tab (bio, timeline, skills, contact)
 resume.html         Resume tab (embedded PDF + download button)
@@ -68,7 +68,7 @@ Then open http://localhost:8000. Stop it with Ctrl+C. On GitHub Pages none of th
 ```
 
 Notes:
-- `"featured": true` puts the card in the Featured section at the top of Projects and in "Selected work" on the landing page.
+- `"featured": true` puts the card in the Featured section at the top of Projects (the landing page uses `"home.strip"` instead; it falls back to featured projects if the list is empty).
 - `"status"`: leave as `""` for finished projects, or write `"In progress"` / `"Proposal stage"`. It shows on the card and in the detail view.
 - Cards show the first 3 tags only.
 - Empty fields are hidden. An empty `"links": []` hides the Links section.
@@ -79,7 +79,7 @@ To delete a project, delete its block (and its image folder).
 ## Edit the timeline, skills, bio
 
 All in `data/content.json`:
-- `"home"`: the headline and intro on the landing page.
+- `"home"`: the landing page. `"headline"` is the line under your name, `"highlights"` are the labeled key facts, and `"strip"` lists the project ids shown as images under "Selected work" (in that order).
 - `"about"`: bio paragraphs and photo path.
 - `"timeline"`: one block per job or school. `"type"` is `"work"` or `"education"` (this drives the filter). Entries show in the order listed, so keep newest first.
 - `"skills"`: groups with a list of items each.

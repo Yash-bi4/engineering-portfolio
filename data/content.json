@@ -8,7 +8,30 @@
   },
   "home": {
     "headline": "B.S. Mechanical Engineering, minor in Robotics, Carnegie Mellon University. Graduating May 2028.",
-    "intro": "I design and build hardware: embedded electronics, aero structures, and machined parts. I also do research on AI-driven CAD."
+    "highlights": [
+      {
+        "label": "Research",
+        "text": "Undergraduate researcher in generative CAD, CMU Visual Design Engineering Lab"
+      },
+      {
+        "label": "Industry",
+        "text": "Engineering & Quality Intern, Safran (2025)"
+      },
+      {
+        "label": "Teams",
+        "text": "Carnegie Mellon Rocket Command, Carnegie Mellon Racing (FSAE)"
+      },
+      {
+        "label": "Tools",
+        "text": "SolidWorks, Ansys Fluent and Mechanical, CNC machining, STM32, Python"
+      }
+    ],
+    "strip": [
+      "l2-tripoli",
+      "tripod-leveler",
+      "pendulum-robot",
+      "nl-to-cad"
+    ]
   },
   "about": {
     "photo": "images/profile.jpg",

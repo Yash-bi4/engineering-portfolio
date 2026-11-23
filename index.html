@@ -28,9 +28,15 @@
   </header>
 
   <main id="main" class="container home">
-    <h1 class="home-name" id="home-name">Yash Kumar Kuiya</h1>
-    <p class="home-headline" id="home-headline"></p>
-    <p class="home-intro" id="home-intro"></p>
+    <div class="home-head">
+      <img class="home-photo" id="home-photo" alt="" width="600" height="600">
+      <div>
+        <h1 class="home-name" id="home-name">Yash Kumar Kuiya</h1>
+        <p class="home-headline" id="home-headline"></p>
+      </div>
+    </div>
+
+    <dl class="home-facts" id="home-facts"></dl>
 
     <ul class="home-links">
       <li><a class="button" href="projects.html">View projects</a></li>
@@ -40,7 +46,7 @@
 
     <section aria-labelledby="selected-h">
       <h2 id="selected-h" class="section-label">Selected work</h2>
-      <ol class="selected" id="selected"></ol>
+      <ul class="strip" id="strip"></ul>
     </section>
 
     <div id="load-error" class="notice" hidden></div>
